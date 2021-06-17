@@ -1,0 +1,260 @@
+
+/*------ Nav-bar ------*/
+.containers {
+  background: radial-gradient(circle, #8db14e, #fff2d7, #8db14e, #fff2d7);
+}
+
+/*------ Filter knop ------*/
+.row-2 {
+  justify-content: space-between;
+  margin: 100px auto 50px;
+}
+
+h1::before{
+  content: attr(data-count);
+  position: absolute;
+  color: white;
+  right: 18px;
+  font-size: 14px;
+  text-align: center;
+  top: 52px;
+  width: 20px;
+  height: 20px;
+  background: #ff8c00;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+h1.zero::before {
+  opacity: 1;
+}
+
+.choose {
+  color: #555;
+  border: 2px #8db14e solid;
+  width: 10rem;
+  height: 2.5rem;
+  border-radius: 8px;
+}
+
+/*------ All product fotos, alle tekst/icon en button------*/
+.products .rows {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.products .rows .col-4 {
+  flex: 18rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0.2rem 0.2rem 1rem #8db14e;
+  border: .1rem solid #8db14e;
+  cursor: pointer;
+  border-radius: 15px;
+  height: 27rem;
+}
+
+.products .rows .col-4 .images {
+  height: 65%;
+  width: 98%;
+  object-fit: cover;
+  position: absolute;
+  top: -100%;
+  left: 0;
+}
+
+.products .rows .col-4:hover .images {
+  top: 0;
+}
+
+.products .rows .col-4:hover .content {
+  transform: translateX(100%);
+}
+
+.content img {
+  float: left;
+  width: 100%;
+  height: 17rem;
+  background-size: cover;
+}
+
+.select {
+  width: 60%;
+  height: 580px;
+  padding: 5%;
+  background: #222;
+  position: absolute;
+  top: -1000px;
+  left: 20%;
+  border: 1px solid #ff523b;
+  transition: 0.5s;
+  overflow-y: auto;
+  margin: auto;
+}
+
+.select .display {
+  top: 10px;
+}
+
+select:focus{
+  outline: none;
+}
+
+.select div {
+  top: 10px;
+}
+
+.select div {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  padding: 5px;
+  border: 1px solid white;
+  position: relative;
+  margin: 5px auto;
+}
+
+.select div img {
+  width: 300px;
+  height: 100%;
+}
+
+.select div p {
+  padding: 35px;
+  color: white;
+}
+
+.select div h6, .select div button {
+  position: absolute;
+  left: 45%;
+  top: 50%;
+  color: white;
+}
+
+.select div button {
+  left: 60%;
+  top: 55%;
+}
+
+.select div span {
+display: none;
+}
+
+button {
+  display: inline-block;
+  background: #dde8ca;
+  color: #606060;
+  padding: 8px 13px;
+  margin: 20px 0;
+  border-radius: 30px;
+  transition: background 0.5s;
+  border: 2px outset #637c36;
+}
+button:hover{
+  background: #637c36;
+  color: #F0FFFF;
+}
+
+/*------ For the pop-up------*/
+section div span {
+  position: absolute;
+  top: 14px;
+  left: 13px;
+  background: #dde8ca;
+  width: 300px;
+  height: 186px;
+  display: none;
+}
+
+section div span img {
+  width: 100%;
+  height: 100%;
+}
+
+section div:nth-child(1)>span.active{
+  animation: first 0.5s ease-in;
+  z-index: 2;
+  display: block;
+}
+
+section div:nth-child(2)>span.active{
+  animation: second 0.5s ease-in;
+  z-index: 2;
+  display: block;
+}
+
+section div:nth-child(3)>span.active{
+  animation: third 0.5s ease-in;
+  z-index: 2;
+  display: block;
+}
+
+section div:nth-child(4)>span.active{
+  animation: four 0.5s ease-in;
+  z-index: 2;
+  display: block;
+}
+
+@@keyframes first {
+  to{
+    width: 30px;
+    height: 20px;
+    left: 1290px;
+    top: -70px;
+  }
+}
+
+@@keyframes second {
+  to{
+    width: 30px;
+    height: 20px;
+    left: 948px;
+    top: -70px;
+  }
+}
+
+@@keyframes third {
+  to{
+    width: 30px;
+    height: 20px;
+    left: 606px;
+    top: -70px;
+  }
+}
+
+@@keyframes four {
+  to{
+    width: 30px;
+    height: 20px;
+    left: 265px;
+    top: -70px;
+  }
+}
+
+/*------  Pagina knoppen ------*/
+.page-btn{
+  margin: 0 auto 80px;
+}
+
+.page-btn span {
+  display: inline-block;
+  background: #dde8ca;
+  color: #606060;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border: 2px outset #637c36;
+  transition: background 0.5s;
+  cursor: pointer;
+}
+
+.page-btn span:hover{
+  background: #637c36;
+  color: #F0FFFF;
+}
+
+.page-btn i {
+  color: #555;
+}
