@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>All products - Bakery</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="..css/products.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+  </head>
+  <body>
+
+
+    <!---Navbar --->
+
+    <div class="containers">
+      <div class="navbar">
+        <div class="logo">
+          <img src="../img/logo.jpg" width="100px">
+        </div>
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">Product</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Account</a></li>
+            <li><a href=""><h1><i class="bi bi-basket"></i></h1></a></li>
+          </ul>
+        </nav>
+        <div class="menu-icon">
+          <a href="index.html" class="menu-icon" onclick="menutoggle()"><i class="bi bi-list"></i></a>
+        </div>
+      </div>
+    </div>
+
+
+  <!---Filter-knop --->
+  <div class="small-container">
+    <div class="row row-2">
+      <h2>All Products</h2>
+      <select class="choose" id="chooses" name="" onclick="getSelectValue();">
+        <option>Default Shorting</option>
+        <option>Short by price</option>
+        <option>Short by popularity</option>
+        <option>Short by rating</option>
+        <option>Short by sale</option>
+      </select>
+    </div>
+
+
+  <!---Producten --->
+
+  <section id="producten" class="products">
+    <div class="rows">
+      <div class="col-4">
+        <img src="../img/logo.jpg" class="images">
+        <div class="content">
+          <img src="../img/muffin1.png" alt="">
+        </div>
+        <h4>Speculaas Muffin</h4>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <p>€3.50</p>
+        <span></span>
+        <button>Voeg toe</button>
+      </div>
+
+      <div class="col-4">
+        <img class="images" src="../img/logo.jpg">
+        <div class="content">
+          <img src="../img/muffin3.png" alt="">
+        </div>
+        <h4>Pistash Chocolate Muffin</h4>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <p>€4.50</p>
+        <span></span>
+        <button>Voeg toe</button>
+      </div>
+
+      <div class="col-4">
+        <img class="images" src="../img/logo.jpg">
+        <div class="content">
+          <img src="muffin2.png" alt="">
+        </div>
+        <h4>Appel & Kaneel Muffin</h4>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <p>€3.50</p>
+        <span></span>
+        <button>Voeg toe</button>
+      </div>
+
+      <div class="col-4">
+        <img class="images" src="../img/logo.jpg">
+        <div class="content">
+          <img src="../img/muffin4.png" alt="">
+        </div>
+        <h4>Banaan Brood Muffin</h4>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <p>€3.50</p>
+        <span></span>
+        <button>Voeg toe</button>
+      </div>
+
+      <div class="col-4">
+        <img class="images" src="../img/logo.jpg">
+        <div class="content">
+          <img src="../img/muffin9.png" alt="">
+        </div>
+        <h4>Blueberry Muffin</h4>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <p>€3.50</p>
+        <span></span>
+        <button>Voeg toe</button>
+      </div>
+
+      <div class="col-4">
+        <img class="images" src="../img/logo.jpg">
+        <div class="content">
+          <img src="../img/muffin6.png" alt="">
+        </div>
+        <h4>Carrot Muffin</h4>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <p>€3.50</p>
+        <span></span>
+        <button>Voeg toe</button>
+      </div>
+
+      <div class="col-4">
+        <img class="images" src="../img/logo.jpg">
+        <div class="content">
+          <img src="../img/muffin7.png" alt="">
+        </div>
+        <h4>Stroopwafel Muffin</h4>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <p>€3.50</p>
+        <span></span>
+        <button>Voeg toe</button>
+      </div>
+
+      <div class="col-4">
+        <img class="images" src="../img/logo.jpg">
+        <div class="content">
+          <img src="../img/muffin8.png" alt="">
+        </div>
+        <h4>Vanilla Sprincle Muffin</h4>
+        <div class="content">
+          <img src="../img/logo.png" alt="">
+        </div>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <span></span>
+        <button>Voeg toe</button>
+      </div>
+    </div>
+  </section>
+
+
+  <!---Pagina knoppen --->
+
+    <div class="page-btn">
+      <span>1</span>
+      <span>2</span>
+      <span>&#10140;</span>
+    </div>
+  </div>
+
+
+<!--- footer --->
+
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download our APP</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <div class="app-logo">
+              <img src="../img/apple-store.png">
+              <img src="../img/play-store.png">
+
+            </div>
+          </div>
+          <div class="footer-col-2">
+            <img src="../img/logo.jpg">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Usefull links</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>Blog Post</li>
+              <li>Return Policy</li>
+              <li>Join Affiliate</li>
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h3>Follow us</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+              <li>Youtube</li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2020 - Easy Tutorials</p>
+      </div>
+    </div>
+
+    <div class="select">
+
+    </div>
+
+
+<!---JS for toggle menu --->
+
+<script src="../js/java.js">
+</script>
+  </body>
+</html>
